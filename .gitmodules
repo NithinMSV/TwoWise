@@ -1,0 +1,3 @@
+[submodule "two-wise-nuxtjs"]
+	path = two-wise-nuxtjs
+	url = https://github.com/NithinMSV/TwoWise.git
