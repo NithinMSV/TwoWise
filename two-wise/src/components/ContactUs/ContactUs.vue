@@ -1,20 +1,20 @@
 <template>
-  <div class="about">
-      <h1>About Page</h1>
+  <div class="contact">
+      <h1>Contact Us Page</h1>
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'About',
+  name: 'ContactUs',
   components: {
   }
 }
 </script>
 
 <style>
-.about{
+.contact{
     position: absolute;
     top: 50px;
   }

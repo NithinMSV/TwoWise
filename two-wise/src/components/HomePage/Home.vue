@@ -1,19 +1,23 @@
 <template>
-  <div id="Home">
-    <Nav />
+  <div class="Home">
+      <h1>Home Page</h1>
+      <welcome />
   </div>
 </template>
 
 <script>
-import Nav from './HomePageComponents/Nav'
+import welcome from './HomePageElements/Welcome'
 export default {
   name: 'Home',
   components: {
-    Nav
+    welcome
   }
 }
 </script>
 
-<style>
-
+<style scoped>
+  .Home{
+    position: absolute;
+    top: 50px;
+  }
 </style>
