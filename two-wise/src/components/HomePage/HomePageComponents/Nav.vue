@@ -1,6 +1,6 @@
 <template>
   <div class="navigation">
-      <h1>Two Wise</h1>
+      <h1>twowise</h1>
     <div class="links">
     <ul>
     <li>

@@ -1,23 +1,37 @@
 <template>
   <div class="Home">
-      <welcome />
-      <HowItWorks />
+    <div class="container">
+      <div class="row">
+        <Box 
+        name="Welcome" 
+        text="Elevate website visits with our Prototype's unique twowise SEO module and
+        grow your business." 
+        button="Get Started" />
+      </div>
+      <div class="row">
+        <Box 
+        name="How It Works?" 
+        text="We have our own unique partner program where
+              you can become one of our partner and earn to
+              increase the website traffic of the clients that subscribed
+              to us so it is genuine visits rather than bots." 
+        button="Become our Partner"/>
+      </div>
       <PlansOverview />
-      <Footer />
+        <Footer />
+    </div>
   </div>
 </template>
 
 <script>
-import welcome from './HomePageElements/Welcome'
-import HowItWorks from './HomePageElements/HowItWorks'
+import Box from './HomePageElements/BoxTemp'
 import PlansOverview from './HomePageElements/PlanOverview'
 import Footer from '../Footer/Footer'
 
 export default {
   name: 'Home',
   components: {
-    welcome,
-    HowItWorks,
+    Box,
     PlansOverview,
     Footer
   }
@@ -30,3 +44,6 @@ export default {
     top: 30px;
   }
 </style>
+
+
+welcometext = 

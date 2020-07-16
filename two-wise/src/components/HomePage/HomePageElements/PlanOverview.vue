@@ -6,14 +6,12 @@
             <div class="plan1-button-el">
             <a href="#a">Start</a>
             </div> 
-            <ExpComp />
         </div>  
         <div class="plan-grid-item plan2">
             <h4>Design B</h4>
             <div class="plan2-button-el">
             <a href="#a">Start</a>
             </div> 
-            <EduComp />
         </div>
     </div>
 </div>   
@@ -33,7 +31,8 @@ export default {
     background-color: transparent;
     font-family: SemiBold;
     top: 120px;
-    left: 250px;
+    left: 240px;
+    margin-top: -60px;
 }
 
 .plan-grid-container {
@@ -52,6 +51,7 @@ export default {
 }
 .plan1 , .plan2{
   height: 500px;
+  width: 500px;
   color: black;
 }
 
@@ -67,19 +67,19 @@ export default {
 
 .plan1-button-el {
     position: absolute;
-    bottom: 3.2%;
-    left: 0.3%;
+    bottom: 2.0%;
+    left: 0.2%;
 }
 
 .plan2-button-el {
     position: absolute;
-    bottom: 3.2%;
+    bottom: 2.0%;
     left: 50.4%;
 }
 
 a {
     text-decoration: none;
-    padding: 15px 219px;
+    padding: 15px 221px;
     color: rgb(0, 0, 0);
     background-color: rgb(0, 136, 113);
 }
