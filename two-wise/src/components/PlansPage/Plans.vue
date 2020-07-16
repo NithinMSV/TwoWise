@@ -13,7 +13,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .plans{
     position: absolute;
     top: 50px;

@@ -1,11 +1,11 @@
 <template>
-  <div class="welcome-element">
+  <div class="hiw-element">
       <div class="wrapper">
-          <div class="welcome-el">
-            <h1>Welcome</h1>
+          <div class="hiw-el">
+            <h1>How It Works</h1>
           </div>
           <div class="button-el">
-            <a href="#a">Get Started</a>
+            <a href="#a">Become our partner</a>
           </div> 
       </div>
   </div>
@@ -14,45 +14,46 @@
 <script>
 
 export default {
-  name: 'welcome',
+  name: 'HowItWorks',
   components: {
   }
 }
 </script>
 
 <style scoped>
-  .welcome-element{
+  .hiw-element{
     position: relative;
     width: 100%;
+    margin-top: -30px;
   }
 
   .wrapper {
     position: relative;
-    top: 50px;
+    top: 100px;
     left: 25%;
     border: 1.5px grey solid;
     height: 400px;
     width: 1000px;
   }
 
-  .welcome-el {
+  .hiw-el {
     position: absolute;
     top: 10%;
-    left: 45%;
+    left: 40%;
   }
 
-   .button-el {
+  .button-el {
     position: absolute;
     top: 70%;
-    left: 43%;
+    left: 40%;
    }
 
-   a {
-       text-decoration: none;
-       border: 2px grey solid;
-       padding: 15px 40px;
-       border-radius: 5px;
-       color: honeydew;
-       background-color: rgb(3, 102, 184);
-   }
+a {
+    text-decoration: none;
+    border: 2px grey solid;
+    padding: 20px 30px;
+    border-radius: 5px;
+    color: honeydew;
+    background-color: rgb(3, 102, 184);
+}
 </style>

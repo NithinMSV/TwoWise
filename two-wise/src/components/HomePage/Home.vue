@@ -1,16 +1,25 @@
 <template>
   <div class="Home">
-      <h1>Home Page</h1>
       <welcome />
+      <HowItWorks />
+      <PlansOverview />
+      <Footer />
   </div>
 </template>
 
 <script>
 import welcome from './HomePageElements/Welcome'
+import HowItWorks from './HomePageElements/HowItWorks'
+import PlansOverview from './HomePageElements/PlanOverview'
+import Footer from '../Footer/Footer'
+
 export default {
   name: 'Home',
   components: {
-    welcome
+    welcome,
+    HowItWorks,
+    PlansOverview,
+    Footer
   }
 }
 </script>
@@ -18,6 +27,6 @@ export default {
 <style scoped>
   .Home{
     position: absolute;
-    top: 50px;
+    top: 30px;
   }
 </style>

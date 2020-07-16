@@ -26,8 +26,16 @@ export default {
 </script>
 
 <style scoped>
-div {
-  position: relative;
+
+* {
+  margin: 0;
+  padding: 0px;
+}
+
+.navigation {
+  margin-top: 0;
+  background-color: rgb(255, 189, 65);
+  height: 70px;
 }
 
 ul {
@@ -42,18 +50,24 @@ li {
 
 .router-link {
   text-decoration: none;
+  color: white;
   }
 
 .links {
-  position: absolute;
-  top: 10px;
-  right: 100px; 
+  position: relative;
+  top: 15px;
+  left: 1000px;
+  height: 30px;
+  width: 400px;
+  padding-top: 5px;
+  background-color: transparent;
 }
 
 h1 {
   position: absolute;
-  top: 0px;
+  top: 15px;
   left: 200px; 
+  color: white;
 }
 
 </style>
