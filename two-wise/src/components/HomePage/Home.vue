@@ -18,7 +18,6 @@
         button="Become our Partner"/>
       </div>
       <PlansOverview />
-        <Footer />
     </div>
   </div>
 </template>
@@ -26,14 +25,12 @@
 <script>
 import Box from './HomePageElements/BoxTemp'
 import PlansOverview from './HomePageElements/PlanOverview'
-import Footer from '../Footer/Footer'
 
 export default {
   name: 'Home',
   components: {
     Box,
-    PlansOverview,
-    Footer
+    PlansOverview
   }
 }
 </script>

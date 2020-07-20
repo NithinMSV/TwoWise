@@ -52,7 +52,6 @@ export default {
 .plan1 , .plan2{
   height: 500px;
   width: 500px;
-  color: black;
 }
 
 .plan1 {
@@ -80,7 +79,7 @@ export default {
 a {
     text-decoration: none;
     padding: 15px 221px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     background-color: rgb(0, 136, 113);
 }
 

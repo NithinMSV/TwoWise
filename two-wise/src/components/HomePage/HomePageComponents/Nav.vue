@@ -1,6 +1,6 @@
 <template>
   <div class="navigation">
-      <h1>twowise</h1>
+      <h4>twowise</h4>
     <div class="links">
     <ul>
     <li>
@@ -13,7 +13,7 @@
       <router-link to="/plans" class="router-link">Plans</router-link>
     </li>
     <li>
-      <router-link to="/contactus" class="router-link">ContactUs</router-link>
+      <router-link to="/contactus" class="router-link">Contact</router-link>
     </li>
     </ul>
     </div>
@@ -63,9 +63,9 @@ li {
   background-color: transparent;
 }
 
-h1 {
+h4 {
   position: absolute;
-  top: 15px;
+  top: 20px;
   left: 200px; 
   color: white;
 }

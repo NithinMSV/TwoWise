@@ -1,14 +1,22 @@
 <template>
     <div class="footer">
-        Footer
+        <ftrlinks />
+        <Subscribe />
+        <cr />
     </div>
 </template>
 
 <script>
+import ftrlinks from './Links'
+import cr from './copyright'
+import Subscribe from './Subscribe'
+
 export default {
     name: "Footer",
     components: {
-
+        ftrlinks,
+        cr,
+        Subscribe
     }
 }
 </script>
@@ -19,9 +27,8 @@ export default {
     position: relative;
     top: 150px;
     height: 250px;
-    background-color: rgb(98, 98, 248);
-    margin: 0;
-    margin-left: -10px;
+    background-color: rgb(30, 177, 221);
+    margin-top: 1300px;
 }
 
 
