@@ -52,6 +52,13 @@ li {
   text-decoration: none;
   color: white;
   }
+.router-link:hover {
+  color: black;
+}
+
+.router-link:active {
+  color: black;
+}
 
 .links {
   position: relative;

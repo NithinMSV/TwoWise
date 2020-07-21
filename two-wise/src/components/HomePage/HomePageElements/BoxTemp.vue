@@ -8,7 +8,7 @@
             <p>{{text}}</p>
           </div>
           <div class="button-el">
-            <a href="#a">{{button}}</a>
+            <button type="button" class="btn btn-primary">{{button}}</button>
           </div> 
       </div>
   </div>
@@ -60,15 +60,6 @@ export default {
   position: absolute;
   top: 70%;
   left: 43%;
-}
-
-a {
-  text-decoration: none;
-  border: 2px grey solid;
-  padding: 15px 30px;
-  border-radius: 5px;
-  color: honeydew;
-  background-color: rgb(3, 102, 184);
 }
 
 </style>

@@ -29,12 +29,12 @@ export default {
 .cr-text {
     position: absolute;
     top: 0px;
-    right: 250px;
+    left: 1200px;
 }
 
 .pow {
     position: absolute;
     top: 30px;
-    right: 200px;
+    left: 1200px;
 }
 </style>

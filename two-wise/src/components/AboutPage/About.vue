@@ -15,7 +15,7 @@ export default {
 
 <style scoped>
 .about{
-    position: absolute;
+    position: relative;
     top: 50px;
   }
 </style>

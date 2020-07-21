@@ -7,6 +7,7 @@
             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your email address" aria-describedby="emailHelp">
         </div>
         </form>
+        <button type="button" class="btn btn-light">OK</button>
         </div>
     </div>
 </template>
@@ -32,9 +33,15 @@ export default {
 .sub {
     position: absolute;
     top: 0px;
-    right: 500px;
+    left: 800px;
 }
 label {
     font-size: 12px;
+}
+
+button {
+    position: absolute;
+    top: 35px;
+    left: 220px;
 }
 </style>
