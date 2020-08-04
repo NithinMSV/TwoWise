@@ -44,8 +44,9 @@ ul {
 
 li {  
   padding: 1px;
-  line-height: 1.1;
+  line-height: 1.1em;
   font-size: 20px;
+  display: block;
 }
 
 .router-link {

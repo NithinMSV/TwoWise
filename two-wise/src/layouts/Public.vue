@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import Nav from '../components/HomePage/HomePageComponents/Nav'
-import Footer from '../components/Footer/Footer'
+import Nav from '../components/Default View/Nav/Nav'
+import Footer from '../components/Default View/Footer/Footer'
 export default {
   name: 'PublicLayout',
   components: {

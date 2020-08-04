@@ -22,15 +22,11 @@
 
 <script>
 export default {
+  name: "nav"
         }
 </script>
 
 <style scoped>
-
-* {
-  margin: 0;
-  padding: 0px;
-}
 
 .navigation {
   margin-top: 0;

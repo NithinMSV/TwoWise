@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import Home from './components/HomePage/Home';
-import About from './components/AboutPage/About';
-import Plans from './components/PlansPage/Plans';
-import ContactUs from './components/ContactUs/ContactUs';
+import Home from './components/Default View/Home/Home';
+import About from './components/Default View/About/About';
+import Plans from './components/Default View/Plans/Plans';
+import Contact from './components/Default View/Contact/Contact';
 import PublicLayout from './layouts/Public';
 import Login from './views/Login'
 import DashboardLayout from './layouts/Dashboard';
@@ -37,7 +37,7 @@ export default new Router({
                 },
                 {
                     path: "/contactus",
-                    component: ContactUs
+                    component: Contact
                 }
             ]
         },

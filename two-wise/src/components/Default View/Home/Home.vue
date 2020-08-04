@@ -23,8 +23,8 @@
 </template>
 
 <script>
-import Box from './HomePageElements/BoxTemp'
-import PlansOverview from './HomePageElements/PlanOverview'
+import Box from './HomeElements/BoxTemp'
+import PlansOverview from './HomeElements/PlanOverview'
 
 export default {
   name: 'Home',

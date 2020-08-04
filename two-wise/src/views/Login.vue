@@ -1,27 +1,17 @@
 <template>
   <div>
-    <h1>Login Page</h1>
-    <div>
-      <input type="text" placeholder="email">
-    </div>
-    <br>
-    <div>
-      <input type="password">
-    </div>
-    <br>
-    <button type="submit">Login</button>
-
-    <br>
-    <br>
-
-    <p>
-      <router-link to="/">Home</router-link>
-    </p>
+    <loginregtemp />
+    <router-view />
   </div>
 </template>
 
 <script>
+import loginregtemp from './LoginReg/LoginRegTemp';
+
 export default {
-  name: "login"
+  name: "login",
+  components: {
+    loginregtemp
+  }
 };
 </script>

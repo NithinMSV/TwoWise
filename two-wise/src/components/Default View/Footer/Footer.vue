@@ -24,12 +24,21 @@ export default {
 <style scoped>
 
 .footer {
-    position: relative;
-    top: 150px;
-    height: 250px;
-    background-color: rgb(30, 177, 221);
-    margin-top: 1300px;
+  position: relative;
+  top: 1500px;
+  height: 250px;
+  background-color: cyan;
 }
 
+@media all and (max-width: 768px) and (orientation: portrait) {
+.footer {
+  position: relative;
+  top: 1500px;
+  height: 250px;
+  margin: 0;
+  padding: 0;
+  background-color: cyan;
+}
+}
 
 </style>
