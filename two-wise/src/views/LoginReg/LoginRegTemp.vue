@@ -25,57 +25,27 @@
         </div>
         </div>
         <div class="render">
-          <div class="client-login" v-if="userpick === 'Member' &&  typepick === 'Client'">
+          <template class="client-login" v-if="userpick === 'Member' &&  typepick === 'Client'">
             <p>Client Login</p>
-            <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Client ID">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Your Password">
-              </div>
-              <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+              <LoginTemplate placeholder="Client ID"/>
             <div class="divider-top"></div>
             <div class="or-text">or</div>
             <div class="divider-bottom"></div>
-            <div id="my-signin2"></div>
-          </div>
-          <div class="client-signup" v-if="userpick === 'Not a Member' && typepick === 'Client'">
+          </template>
+          <template class="client-signup" v-if="userpick === 'Not a Member' && typepick === 'Client'">
             <p>Sign up as Client</p>
-          </div>
-          <div class="partner-login" v-if="userpick === 'Member' && typepick === 'Partner'">
+            <SignupTemplate />
+          </template>
+          <template class="partner-login" v-if="userpick === 'Member' && typepick === 'Partner'">
             <p>Partner Login</p>
-            <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Partner ID">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Your Password">
-              </div>
-              <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            <LoginTemplate placeholder="Partner ID"/>
             <div class="divider-top"></div>
             <div class="or-text">or</div>
             <div class="divider-bottom"></div>
-          </div>
-          <div class="partner-signup" v-if="userpick === 'Not a Member' && typepick === 'Partner'">
+          </template>
+          <template class="partner-signup" v-if="userpick === 'Not a Member' && typepick === 'Partner'">
             <p>Sign up as Partner</p>
-          </div>
+          </template>
         </div>
         </div>
     </div>
@@ -83,14 +53,18 @@
 
 <script>
 
+import LoginTemplate from './LoginTemp';
+import SignupTemplate from './SignupTemp';
+
 export default {
     name: "loginregtemp",
     components: {
-      
+      LoginTemplate,
+      SignupTemplate
     },
     data(){
       return{
-        uerpick: '',
+        userpick: '',
         typepick: '',
         type: ['Member','Not a Member','Client','Partner']
       }
