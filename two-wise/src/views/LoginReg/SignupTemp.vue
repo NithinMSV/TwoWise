@@ -24,8 +24,8 @@
                 </div>
                 <div class="col">
                 <div class="form-group">
-                <label for="InputClientID">Client ID</label>
-                <input type="text" class="form-control" id="InputClientID" aria-describedby="emailHelp" placeholder="Client ID auto-generated" v-model="ci" disabled>
+                <label for="InputClientID">{{IDtype}}</label>
+                <input type="text" class="form-control" id="InputClientID" aria-describedby="emailHelp" :placeholder=placeholder v-model="ci" disabled>
                 </div>
                 </div>
             </div>
@@ -82,15 +82,14 @@
                 </div>
                 <div class="col">
                 <div class="form-group">
-                 <label for="industry-select">State</label>
+                <label for="gender-select">Gender</label>
                 <br />
-                <select id="industry-select" class="option-select" v-model="st">
-                <!-- <option value=''>Select an industry</option> -->
-                <option v-for="state in optionsforstates" :key="state">
-                    {{state}}
+                <select id="gender-select" class="option-select" v-model="gn">
+                <option v-for="gender in optionsforgender" :key="gender">
+                    {{gender}}
                 </option>
                 </select>
-                </div>
+                </div>    
                 </div>
             </div>
             <div class="row">
@@ -107,19 +106,6 @@
                 </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                <div class="form-group">
-                <label for="gender-select">Gender</label>
-                <br />
-                <select id="gender-select" class="option-select" v-model="gn">
-                <option v-for="gender in optionsforgender" :key="gender">
-                    {{gender}}
-                </option>
-                </select>
-                </div>    
-                </div>
-            </div>
             <button type="submit" class="btn btn-outline-warning">Sign Up</button>
         </form>
     </div>
@@ -132,7 +118,7 @@ import industry from '../../assets/industrylist.json';
 
 export default {
     name: 'SignupTemplate',
-	props: [],
+	props: ['IDtype','placeholder'],
 	computed:{
 		country_names(){
 			return country.optionsforcountries.map((item) => {

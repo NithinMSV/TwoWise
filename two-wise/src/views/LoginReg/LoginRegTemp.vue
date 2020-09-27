@@ -27,14 +27,14 @@
         <div class="render">
           <template class="client-login" v-if="userpick === 'Member' &&  typepick === 'Client'">
             <p>Client Login</p>
-              <LoginTemplate placeholder="Client ID"/>
+              <LoginTemplate placeholder="Client ID" />
             <div class="divider-top"></div>
             <div class="or-text">or</div>
             <div class="divider-bottom"></div>
           </template>
           <template class="client-signup" v-if="userpick === 'Not a Member' && typepick === 'Client'">
             <p>Sign up as Client</p>
-            <SignupTemplate />
+            <SignupTemplate IDtype="Client ID" placeholder="Auto-generated Client ID"/>
           </template>
           <template class="partner-login" v-if="userpick === 'Member' && typepick === 'Partner'">
             <p>Partner Login</p>
@@ -45,6 +45,7 @@
           </template>
           <template class="partner-signup" v-if="userpick === 'Not a Member' && typepick === 'Partner'">
             <p>Sign up as Partner</p>
+            <SignupTemplate IDtype="Partner ID" placeholder="Auto-generated Partner ID"/>
           </template>
         </div>
         </div>
